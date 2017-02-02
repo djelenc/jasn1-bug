@@ -1,0 +1,8 @@
+David DEFINITIONS ::= BEGIN
+
+MyMessage ::= [APPLICATION 10] IMPLICIT SEQUENCE {
+  value ENUMERATED { invalid-parameters (0), internal-error (1) },
+  message PrintableString
+}
+
+END
